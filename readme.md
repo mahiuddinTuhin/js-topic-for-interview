@@ -133,26 +133,33 @@ Choose methods that align with your coding style and readability preferences.
 ```
 Here's a clear explanation of higher-order functions with examples:
 
-Higher-order functions (HOFs) are functions that treat other functions as values. They can take functions as arguments, return functions as results, or both. This powerful concept allows for:
+Higher-order functions (HOFs) are functions that treat other functions
+as values. They can take functions as arguments, return functions as
+results, or both. This powerful concept allows for:
 
-Abstraction: Encapsulating common patterns of operations on data, making code more concise and reusable.
+Abstraction: Encapsulating common patterns of operations on data, making
+code more concise and reusable.
 Composition: Combining functions to create more complex functionality.
 Flexibility: Passing different functions to HOFs to customize their behavior.
 Common Examples in JavaScript:
 
-map(): Applies a function to each element of an array, creating a new array with the results.
+map(): Applies a function to each element of an array, creating a new
+array with the results.
 
 JavaScript
 const numbers = [1, 2, 3];
 const doubledNumbers = numbers.map(number => number * 2); // [2, 4, 6]
-filter(): Creates a new array containing only elements that pass a test implemented by a function.
+filter(): Creates a new array containing only elements that pass a test
+implemented by a function.
 
 JavaScript
 const evenNumbers = numbers.filter(number => number % 2 === 0); // [2]
-reduce(): Applies a function against an accumulator and each element in an array (from left to right) to reduce it to a single value.
+reduce(): Applies a function against an accumulator and each element in
+an array (from left to right) to reduce it to a single value.
 
 JavaScript
-const sum = numbers.reduce((accumulator, number) => accumulator + number, 0); // 6
+const sum = numbers.reduce((accumulator, number) => accumulator + number, 0);
+// 6
 Custom Higher-Order Function Example:
 
 JavaScript
@@ -165,9 +172,12 @@ const result = applyTwice(square, 5); // 625 (5 squared twice)
 Key Benefits of HOFs:
 
 Cleaner code: Reduce code duplication and promote reusability.
-Expressive abstractions: Create concise and readable solutions for common patterns.
-Functional programming style: Empower you to write more declarative and pure code.
-Powerful tools for data manipulation: Help handle complex data transformations efficiently.
+Expressive abstractions: Create concise and readable solutions for
+common patterns.
+Functional programming style: Empower you to write more declarative
+and pure code.
+Powerful tools for data manipulation: Help handle complex data
+transformations efficiently.
 Sources
 1. https://github.com/AsyncAF/AsyncAF
 ```
