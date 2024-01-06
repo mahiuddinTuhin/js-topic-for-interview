@@ -181,3 +181,42 @@ transformations efficiently.
 Sources
 1. https://github.com/AsyncAF/AsyncAF
 ```
+
+### Abstraction:
+
+```
+
+Concept: In programming, abstraction involves focusing on essential characteristics and behaviors while hiding implementation details. It simplifies complex systems and promotes code reuse.
+Key Mechanisms in JavaScript:
+Function Constructors: Blueprints for creating objects with shared properties and methods.
+Prototypes: Objects that act as templates for other objects, defining properties and methods that are inherited.
+```
+
+### Prototypes:
+
+````
+
+Concept: Every object in JavaScript has a prototype, either directly or through its constructor. Prototypes enable inheritance of properties and methods, forming a prototype chain.
+How It Works:
+When accessing a property or method on an object, JavaScript first searches the object itself.
+If not found, it follows the prototype chain, checking the object's prototype, then its prototype's prototype, and so on.
+This continues until the property or method is found, or the end of the chain is reached (resulting in undefined).```
+````
+
+##### example:
+
+```
+// Function constructor for a Vehicle
+function Vehicle(name) {
+  this.name = name;
+}
+
+// Define a method on the Vehicle prototype
+Vehicle.prototype.start = function() {
+  console.log(`${this.name} started.`);
+};
+
+// Create a Car object, inheriting from Vehicle
+let car = new Vehicle("Honda Civic");
+car.start();  // Output: "Honda Civic started."
+```
