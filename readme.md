@@ -273,3 +273,14 @@ In this analogy, the factory blueprint (class) defines what every vehicle should
 #### The event loop is a mechanism that allows JavaScript to handle events and execute code efficiently, even though it's single-threaded.
 
 ##### When an event occurs, it is brought to the event queue for the JS engine. Js engine executes the code on the FIFO system. If there are no events in the event queue, the js engine waiting unless another event is triggered and listed in the queue. This whole continuous process can be called as event loop.
+
+### Promises
+
+#### Promises in JavaScript are objects that represent the eventual completion or failure of an asynchronous operation. They allow you to handle asynchronous operations more easily and avoid callback hell, making code cleaner and more readable.
+
+````A promise can be in one of three states:
+
+Pending: Initial state, neither fulfilled nor rejected.
+Fulfilled: The operation completed successfully.
+Rejected: The operation failed.```
+````

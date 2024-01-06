@@ -1,12 +1,11 @@
-function introduce(name) {
-  const s = () => {
-    console.log(name);
-  };
+const names = {
+  fNames: "Tyuin",
+  lname: "hamid",
+  s: () => {
+    this.fName = "tyty";
+  },
+};
 
-  return s;
-}
-
-const cl = introduce("tome");
-
-console.log(typeof cl);
-console.log(cl);
+const newArr = names.map((x) => {
+  console.log(x);
+});
