@@ -267,3 +267,9 @@ bike.move(); // Output: The vehicle moves on 2 wheels.
 ```
 
 In this analogy, the factory blueprint (class) defines what every vehicle should have, constructors build specific vehicles based on this blueprint, and instances are the actual vehicles created using this process.
+
+### Event loop
+
+#### The event loop is a mechanism that allows JavaScript to handle events and execute code efficiently, even though it's single-threaded.
+
+##### When an event occurs, it is brought to the event queue for the JS engine. Js engine executes the code on the FIFO system. If there are no events in the event queue, the js engine waiting unless another event is triggered and listed in the queue. This whole continuous process can be called as event loop.
