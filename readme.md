@@ -220,3 +220,48 @@ Vehicle.prototype.start = function() {
 let car = new Vehicle("Honda Civic");
 car.start();  // Output: "Honda Civic started."
 ```
+
+### Class
+
+```Imagine making different types of vehicles in a factory.
+
+Prototype and Class
+In a factory, you have a blueprint for a vehicle—a plan that describes how vehicles should look and function. This blueprint is like a class in JavaScript. It defines what properties (like the number of wheels) and behaviors (like moving or honking) all vehicles should have.
+
+Instances
+When you build an actual vehicle based on this blueprint, you create an instance of that class. For instance, you create a car and a bike following the same blueprint but with specific characteristics unique to each—like color, size, or model year. These individual vehicles are instances of the blueprint (the class).
+
+Constructors
+A constructor is like a specialized machine in the factory that takes a general blueprint and customizes it for a specific vehicle. For example, a car constructor might take a generic vehicle and add specific features like a steering wheel, seats, or a sunroof to make it a car.
+
+Prototype Property
+Think of the prototype property like a set of instructions shared among all vehicles of a certain type. It contains common behaviors (methods) that every vehicle of that type can perform, such as honking or starting the engine.
+
+Creating Instances
+When using the new keyword in JavaScript, you're essentially asking the factory to build a new vehicle based on the given blueprint (class). This process ensures that the new vehicle has all the necessary features defined in the blueprint.
+
+Example:
+
+```
+
+```
+// Blueprint (Class)
+class Vehicle {
+  constructor(wheels) {
+    this.wheels = wheels;
+  }
+
+  move() {
+    console.log(`The vehicle moves on ${this.wheels} wheels.`);
+  }
+}
+
+// Instance (Using Constructor)
+const car = new Vehicle(4); // A car with 4 wheels
+const bike = new Vehicle(2); // A bike with 2 wheels
+
+car.move(); // Output: The vehicle moves on 4 wheels.
+bike.move(); // Output: The vehicle moves on 2 wheels.
+```
+
+In this analogy, the factory blueprint (class) defines what every vehicle should have, constructors build specific vehicles based on this blueprint, and instances are the actual vehicles created using this process.
