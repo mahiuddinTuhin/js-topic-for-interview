@@ -1,19 +1,12 @@
-// const obj1 = {
-//   value: 10,
-// };
+function introduce(name) {
+  const s = () => {
+    console.log(name);
+  };
 
-// const obj2 = obj1;
+  return s;
+}
 
-// const obj3 = {
-//   value: 10,
-// };
+const cl = introduce("tome");
 
-// obj1.value = 20;
-
-// console.log(obj2.value);
-
-let numbers = [1,9, 2, 3];
-
-console.log(Math.max(...numbers));
-
-
+console.log(typeof cl);
+console.log(cl);

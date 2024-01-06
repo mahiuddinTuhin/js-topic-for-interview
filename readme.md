@@ -2,6 +2,8 @@
 
 #### closure is the ability of a function to capture and retain(holds) the values of its local variables, even after the function has completed execution.
 
+#### Closure is a function that really captures and retains another function and gets access to its variable and inner function.
+
 ```
 function createCounter() {
   let count = 0; // Outer scope variable
